@@ -301,6 +301,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1584044624}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4177268becba14a739eacf599fb62b4f, type: 3}
+  m_Script: {fileID: 11500000, guid: 774c05ebeabb24913a4675d853060994, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxSpeed: 4.9
+  horizontalSpeed: 15
+  clampXmin: -10.54
+  clampXmax: 9
+  clampYmin: -5.34
+  clampYmax: 8.55
+  bulletSpeed: 1
+  forwardRotation: -15
+  backwardRotation: 8
+  rotationSpeed: 20
+  gravitiy: {x: 0, y: -4.9, z: 0}
+  thrust: {x: 0, y: 0.2, z: 0}
+  horizontalThrust: {x: 0.5, y: 0, z: 0}
