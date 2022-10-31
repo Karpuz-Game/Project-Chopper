@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class chopperBullet : MonoBehaviour
 {
     [Header("Vectors")]
@@ -26,7 +28,6 @@ public class chopperBullet : MonoBehaviour
             )
         {
             this.gameObject.SetActive(false);
-            Debug.Log("Yokedildi");
         }
     }
 
