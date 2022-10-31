@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -36,6 +37,10 @@ public class PlayerHelicopter : MonoBehaviour
             velocity += thrust;
         }
 
+        if (Input.GetKey(KeyCode.S))
+        {
+            velocity -= thrust;
+        }
         if (horizontal != 0) {
             velocity += (horizontal * horizontalThrust * Time.fixedDeltaTime) * horizontalSpeed;
         }
@@ -43,4 +48,8 @@ public class PlayerHelicopter : MonoBehaviour
         transform.position += velocity * Time.deltaTime;
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Deal Damage
+    }
 }

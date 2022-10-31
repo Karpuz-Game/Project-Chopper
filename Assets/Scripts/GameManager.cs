@@ -20,7 +20,6 @@ public class GameManager : MonoBehaviour
             instance = this;
         }
 
-
         _player = GameObject.FindGameObjectWithTag("Player");
         // _playerTurret = GameObject.FindGameObjectWithTag("PlayerTurret");
 
