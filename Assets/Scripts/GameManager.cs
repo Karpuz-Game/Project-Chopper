@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour
 
     [Header("GameObjects")]
     private GameObject _player;
-    // private GameObject _playerTurret;
-    // [SerializeField] private GameObject chopperBulletPrefab;
+    private GameObject _playerTurret;
+    [SerializeField] private GameObject chopperBulletPrefab;
 
 
 
@@ -21,12 +21,12 @@ public class GameManager : MonoBehaviour
         }
 
         _player = GameObject.FindGameObjectWithTag("Player");
-        // _playerTurret = GameObject.FindGameObjectWithTag("PlayerTurret");
+        _playerTurret = GameObject.FindGameObjectWithTag("PlayerTurret");
 
         if (_player == null)
             Debug.Log("_player is empty!!!");
-        // if (_playerTurret == null)
-        //     Debug.Log("_playerTurret is empty!!!");
+        if (_playerTurret == null)
+            Debug.Log("_playerTurret is empty!!!");
     }
 
 
@@ -56,13 +56,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // public GameObject playerTurret
-    // {
-    //     get
-    //     {
-    //
-    //         return _playerTurret;
-    //     }
-    // }
+    public GameObject playerTurret
+    {
+        get
+        {
+    
+            return _playerTurret;
+        }
+    }
 
 }

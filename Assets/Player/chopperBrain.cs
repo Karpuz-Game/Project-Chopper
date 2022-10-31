@@ -1,10 +1,10 @@
-using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHelicopter : MonoBehaviour
-{   [Header("Floats")]
+public class chopperBrain : MonoBehaviour
+{
+    [Header("Floats")]
     public float maxSpeed;
     private float horizontal;
     public float horizontalSpeed;
@@ -33,8 +33,8 @@ public class PlayerHelicopter : MonoBehaviour
     [Header("Cams")]
     private Camera mainCam;
 
-    // [Header("Others")]
-    // public chopperBulletPool chopperBulletPool;
+    [Header("Others")]
+    public chopperBulletPool chopperBulletPool;
 
 
     private void Start()
@@ -50,7 +50,7 @@ public class PlayerHelicopter : MonoBehaviour
         //TODO: fix fire back
         if (Input.GetMouseButtonDown(0))
         {
-            // Fire(chopperBulletPool.GetNextAvailableObject());
+            Fire(chopperBulletPool.GetNextAvailableObject());
         }
     }
     private void FixedUpdate()
